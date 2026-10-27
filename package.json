@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "EUPL-1.2",
   "scripts": {
-    "prebuild": "node scripts/check-vue-demi.js",
+    "prebuild": "node scripts/check-vue-demi.js && node scripts/patch-nextcloud-vue.js",
     "build": "NODE_ENV=production webpack --config webpack.config.js --progress",
     "check:e2e-nav": "node scripts/check-e2e-navigation.js",
     "check:l10n-js": "node scripts/build-l10n-js.js --check",
